@@ -1,11 +1,11 @@
 # Set the Git repository path
-$repositoryPath = "C:\Repos1\Edge\z_test"
+$repositoryPath = "C:\Repos1\report\z_test"
 
 # Set the desired tag pattern
-$tagPattern = "*v1.6.1"
+$tagPattern = "*v1.1"
 
 # Set the destination folder for copied files
-$destinationFolder = "C:\Repos1\Edge\z_test_output"
+$destinationFolder = "C:\Repos1\report\z_test_output"
 
 # Set the extension of files to be removed
 $oldFileExtension = "_old.rdl"
@@ -15,7 +15,7 @@ $logFilePath = "C:\Repos1\Edge\z_test_output\file.log"
 
 try {
     # Verify if Git is installed
-    $gitPath = "C:\Users\isaac.atuahene\AppData\Local\Programs\Git\cmd\git.exe"
+    $gitPath = "C:\Users\ike\AppData\Local\Programs\Git\cmd\git.exe"
     if (!(Test-Path $gitPath)) {
         # Write the error message and timestamp to the log file
         $errorMessage = "Git is not installed or not accessible. Please make sure Git is installed and accessible in the specified path: $gitPath"
